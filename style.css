@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans:ital@1&display=swap');
+body{
+	font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+	margin: 0px;
+}
+img.prod{
+	width:100%;
+	height:100%;
+}
+img.svg{
+	width: 20px;
+	height: 20px;
+}
+img.logo{
+	width: 50px;
+	height: 50px;
+}
+.items{
+	padding: 29px;
+}
+.col-one, .col-two, .col-three {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+.col-three {
+    margin-right: 0;
+}
+
+ 
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width : 767px) {
+    .col-one, .col-two, .col-three {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+ 
+    .col-one, .col-two {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+footer.footerspace{
+	text-align: center;
+}
+img.svg_cart{
+	width: 40px;
+	height: 40px;
+	padding-top: 3px;
+	padding-right: 10px;
+}
+footer.end{
+text-align: center;
+padding: 10px;
+font-style: oblique;
+}
+footer.copy{
+	padding: 0px;
+}
+.filters{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 12px;
+  margin: 2px 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {opacity: 1}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
